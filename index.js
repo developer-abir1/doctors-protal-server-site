@@ -8,7 +8,7 @@ const admin = require("firebase-admin");
 
 
 const app = express()
-// admin-sdk.json
+
 
 const serviceAccount = require('./admin-sdk.json')
 
@@ -129,6 +129,8 @@ async function run() {
     }
 }
 run().catch(console.dir)
+
+
 app.get('/', (req, res) => {
     res.send('Doctors protal server is running')
 })
